@@ -1,0 +1,17 @@
+image-name: tornadoos
+fedora-version: 40
+base-image: ghcr.io/ublue-os/bluefin
+
+packages:
+  - steam
+  - gamemode
+  - lutris
+  - wine
+  - neofetch
+  - distrobox
+  - vim
+  - flatpak
+
+postprocess:
+  - |
+    echo "Welcome to TornadoOS" > /etc/motd
